@@ -1,12 +1,10 @@
 # Calgary-Kiosk
 This repository is for the development of a a kiosk application that will give information to new residents to calgayr.
 
-## Authors
- - Colin Christophe
- - Derek Urban
- - Abdullah Ishtiaq
- - Gaurav Gulati
- - Max Botham
+## Authors/ Team
+  -Project Lead and Developer: Gaurav Gulati & Max Botham
+  -Software Architect: Colin Christopher & Derek Urban
+  -UX Designer: Abdullah Ishtiaq
 
 ## How to run:
 This project is currently in development. Use the following instructions to run the project:
