@@ -3,8 +3,11 @@ This repository is for the development of a a kiosk application that will give i
 
 ## Authors/ Team
   -Project Lead and Developer: Gaurav Gulati & Max Botham
+  
   -Software Architect: Colin Christopher & Derek Urban
+  
   -UX Designer: Abdullah Ishtiaq
+  
 
 ## How to run:
 This project is currently in development. Use the following instructions to run the project:
