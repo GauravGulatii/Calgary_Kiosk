@@ -1,0 +1,130 @@
+/* Emergency Category Button Styles */
+.emergency-category {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure vertical center alignment */
+  border: 2px solid #00337e;
+  width: 70%;
+  margin: 15px auto; /* Centering and spacing simplified */
+  border-radius: 10px;
+  background-color: #f5f6ff;
+  color: #00337e;
+  font-size: 24px; /* Adjusted for better readability */
+  font-weight: 500;
+  padding: 15px 0; /* Increased padding for a taller, more clickable area */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for hover and selected states */
+}
+
+.emergency-category svg {
+  height: 35px;
+  width: 35px;
+  margin-right: 15px;
+}
+
+.emergency-category:hover, .emergency-category.selected {
+  background-color: #00337e;
+  color: #f5f6ff;
+}
+
+/* Subtitle Style */
+.subtitle {
+  color: #707070; /* Updated to a darker shade of gray for better readability */
+  font-style: italic;
+  width: 70%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* Emergency Option Button Styles (Cancel and Submit) */
+.cancel, .submit {
+  height: 80px; /* Increased height for better accessibility */
+  width: 70%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.cancel {
+  color: var(--red);
+  background-color: var(--red-faded);
+  border: 1px solid var(--red);
+  box-shadow: 0 4px 8px var(--red-shadow);
+  position: relative;
+}
+
+.submit {
+  color: var(--green);
+  background-color: var(--green-faded);
+  border: 1px solid var(--green); /* Neutral color initially */
+  position: relative; /* To position the CircularProgress absolutely */
+}
+
+.submit.active {
+  background-color: #4CAF50; /* Active state to indicate selection or success */
+}
+
+/* Dialog Styles for Success and Update Messages */
+.dialog-success, .dialog-update {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  display: none; /* Hidden by default, displayed via JavaScript */
+}
+
+.dialog-success {
+  background-color: #4CAF50;
+}
+
+.dialog-update {
+  background-color: #FF9800;
+}
+
+/* CircularProgress Container for Enhanced Visibility */
+.circular-progress {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.circular-progress svg {
+  color: #4caf50; /* Consistent green to match the active state of the submit button */
+}
+
+.submit {
+  position: relative;
+  color: black; /* Ensure text is visible on all backgrounds */
+  background-color: var(--green-faded);
+  border: 1px solid var(--green);
+  overflow: hidden;
+}
+
+.submit-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--green);
+  transition: width 1s linear;
+  z-index: 1; /* Ensure it's behind the text */
+}
+
+.submit-text {
+  position: relative;
+  z-index: 2; /* Ensure text is above the progress fill */
+  width: 100%;
+  text-align: center;
+}

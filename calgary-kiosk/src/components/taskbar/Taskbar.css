@@ -1,0 +1,49 @@
+.taskbar-container {
+  max-width: 500px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: 15%;
+  justify-content: space-between;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.taskbar-icon:hover {
+  color: var(--gray);
+}
+
+.taskbar-qr {
+  margin-left: 5%;
+  position: relative;
+  width: 85px;
+  height: 85px;
+}
+
+.taskbar-qr-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.taskbar-qr-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 85px;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  span {
+    width: 70px;
+  }
+}

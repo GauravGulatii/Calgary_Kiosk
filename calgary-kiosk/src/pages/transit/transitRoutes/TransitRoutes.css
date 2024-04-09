@@ -1,0 +1,93 @@
+.google-map-container {
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: height 300ms ease-in-out;
+}
+
+.bus-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 30px 5px 30px;
+  margin: 4% auto 8%;
+  border: 1px solid var(--dark-blue);
+  border-radius: 10px;
+  color: var(--dark-blue);
+  background-color: var(--dark-blue-faded);
+  box-shadow: 0 4px 8px var(--dark-blue-shadow);
+  width: 68%;
+  margin: 10px auto;
+
+  .bus-info {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    color: #00337e;
+    border-bottom: 2px solid #878fd1;
+    padding-bottom: 2px;
+
+    .bus-info-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      font-weight: bold;
+      min-width: 60px;
+      max-width: 60px;
+    }
+
+    .bus-info-route {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      border-right: 2px solid #878fd1;
+      border-left: 2px solid #878fd1;
+    }
+
+    .bus-info-time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      font-size: 15px;
+      min-width: 60px;
+      max-width: 60px;
+    }
+  }
+
+  .bus-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bus-pagination-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .pagination-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .pagination-button:hover {
+    opacity: 0.5;
+  }
+}

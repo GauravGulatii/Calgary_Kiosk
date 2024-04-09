@@ -1,0 +1,130 @@
+.transit-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 30px 5px 30px;
+  margin: 8% auto;
+  border: 1px solid var(--dark-blue);
+  border-radius: 10px;
+  width: 65%;
+  color: var(--dark-blue);
+  background-color: var(--dark-blue-faded);
+  box-shadow: 0 4px 8px var(--dark-blue-shadow);
+
+  .transit-info {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    color: #00337e;
+
+    .transit-info-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      font-weight: bold;
+      min-width: 60px;
+      max-width: 60px;
+    }
+
+    .transit-info-route {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      border-right: 2px solid #878fd1;
+      border-left: 2px solid #878fd1;
+    }
+
+    .transit-info-delay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      font-size: 15px;
+      color: red;
+      min-width: 60px;
+      max-width: 60px;
+    }
+  }
+
+  .transit-pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .transit-pagination-dots {
+      display: flex;
+      font-size: 10px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .pagination-button {
+      background: none;
+      border: none;
+      height: 30px;
+      padding: 0px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .pagination-button {
+      color: var(--dark-blue);
+      border: none;
+      height: 30px;
+      padding: 0px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .pagination-button:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.transit-options-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 20% 0;
+}
+
+.transit-option {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 10px 0px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 10px;
+  width: 65%;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  background-color: var(--dark-blue-faded);
+  box-shadow: 0 4px 8px var(--dark-blue-shadow);
+}
+
+.transit-option:hover {
+  background-color: var(--dark-blue-hover);
+}

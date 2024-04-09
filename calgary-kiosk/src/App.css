@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --gray: #868686;
+  --light-gray: #e9e9e9;
+  --dark-blue: #00337e;
+  --dark-blue-hover: #b0b8ff;
+  --dark-blue-shadow: #00327e6e;
+  --dark-blue-faded: #dadeff;
+  --light-blue-faded: #f5f6ff;
+  --red: #7e0000;
+  --red-hover: #ffa6a6;
+  --red-shadow: #7e00006b;
+  --red-faded: #ffe2e2;
+  --green: #447744;
+  --green-hover: #aff0c8;
+  --green-faded: #ccffcc;
+  --green-shadow: rgba(0, 255, 0, 0.2);
+}
+
+body {
+  font-family: "Lato", serif;
+  background: var(--gray);
+}
+
+.App {
+  height: 750px;
+  width: 500px;
+  border: 2px solid black;
+  margin: 10vh auto;
+  background: white;
+  position: relative;
+}
